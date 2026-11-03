@@ -1,0 +1,7 @@
+estimator:
+  backend: tipsv2_dpt
+  weights_path: google/tipsv2-g14-dpt
+  depth_kind: metric
+  batch_size: 2
+  device: auto
+  precision: float32

@@ -1,0 +1,7 @@
+estimator:
+  backend: depth_anything
+  weights_path: depth-anything/Depth-Anything-V2-Metric-Outdoor-Large-hf
+  depth_kind: metric
+  batch_size: 4
+  device: auto
+  precision: float32

@@ -1,0 +1,7 @@
+estimator:
+  backend: glpn
+  weights_path: vinvino02/glpn-nyu
+  depth_kind: metric
+  batch_size: 2
+  device: auto
+  precision: float32

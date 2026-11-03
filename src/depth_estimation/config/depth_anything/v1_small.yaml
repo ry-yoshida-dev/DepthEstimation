@@ -1,0 +1,7 @@
+estimator:
+  backend: depth_anything
+  weights_path: LiheYoung/depth-anything-small-hf
+  depth_kind: relative_inverse
+  batch_size: 8
+  device: auto
+  precision: float32

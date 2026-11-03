@@ -1,0 +1,7 @@
+estimator:
+  backend: depth_pro
+  weights_path: apple/DepthPro-hf
+  depth_kind: metric
+  batch_size: 1
+  device: auto
+  precision: float32

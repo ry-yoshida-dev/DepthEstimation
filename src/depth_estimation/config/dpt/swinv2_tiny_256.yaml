@@ -1,0 +1,7 @@
+estimator:
+  backend: dpt
+  weights_path: Intel/dpt-swinv2-tiny-256
+  depth_kind: relative_inverse
+  batch_size: 8
+  device: auto
+  precision: float32
