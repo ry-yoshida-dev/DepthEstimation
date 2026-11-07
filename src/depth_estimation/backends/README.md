@@ -2,12 +2,7 @@
 
 ## Overview
 
-Concrete `DepthEstimator` implementations on `transformers` depth estimation models. `TransformersDepthEstimator`
-loads the image processor and model of a checkpoint, runs images of one input shape in one forward pass, and converts
-the post-processed output to `DepthMap`. Families differing from that adapt only the difference.
-
-Nothing is imported eagerly: `EstimatorSettings.build()` imports only the module of the requested backend, so importing
-`depth_estimation` loads neither `torch` nor `transformers`.
+Concrete `DepthEstimator` implementations on `transformers` depth estimation models. Each backend module is imported only when `EstimatorSettings.build()` requests it.
 
 ## Components
 

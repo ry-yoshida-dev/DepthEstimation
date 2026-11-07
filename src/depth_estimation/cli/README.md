@@ -2,14 +2,7 @@
 
 ## Overview
 
-The `depth-estimate` command, installed with the package. It estimates the depth of image files and directories with
-settings from a packaged preset, a YAML file or a backend, depth kind and weights, and writes `<stem>.npy` with the raw
-values and `<stem>.png` with a Turbo rendering of each image, overwriting existing files of those names. Images are
-read one mini-batch at a time, so directories of any size run in bounded memory; files that cannot be decoded and
-high-bit-depth images are reported on standard error and skipped. Invalid arguments, and images that would overwrite
-each other's output, are reported before the model is loaded.
-
-Prompt Depth Anything needs a prompt depth per image, so it is available through the Python API only.
+The `depth-estimate` command, installed with the package. It writes `<stem>.npy` with the raw values and `<stem>.png` with a Turbo rendering for each image file; run `depth-estimate --help` for the options. Prompt Depth Anything is available through the Python API only.
 
 ## Components
 
